@@ -12,7 +12,7 @@ $date = date("Y-m-d H:i:s");
 // =====================
 // OWNER EMAIL
 // =====================
-$to = "info@rvindotech.com";
+$to = "saturnwebmedia1@gmail.com";
 
 $mailSubject = "New Inquiry from Website";
 
@@ -26,7 +26,7 @@ Message: $message
 Date: $date
 ";
 
-$headers = "From: info@rvindotech.com\r\n";
+$headers = "From: saturnwebmedia1@gmail.com\r\n";
 $headers .= "Reply-To: $email\r\n";
 
 // Send email
