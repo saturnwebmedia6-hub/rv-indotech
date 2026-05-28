@@ -108,7 +108,7 @@
   <div class="section mb-3">
     <h4>India Address</h4>
     903, Velonia, Lane 2, behind Maratha Mandir,<br>
-    Bavdhan, Pune - 411021, Maharashtra, India
+    Bavdhan, Pune - 411021, Maharashtra, India.
   </div>
 
   <div class="section mb-3">
@@ -139,7 +139,7 @@
 
       <!-- RIGHT SIDE FORM -->
 <div class="col-12 col-md-6">
-
+<!-- 
         <form class="p-4 border rounded shadow-sm bg-white">
 
           <div class="mb-3">
@@ -164,8 +164,34 @@
 
           <button class="btn  w-100 text-white" style="background-color: #5359cd;">Submit</button>
 
-        </form>
+        </form> -->
+<form action="submit.php" method="POST" class="p-4 border rounded shadow-sm bg-white">
 
+  <div class="mb-3">
+    <label class="form-label">Your Name</label>
+    <input type="text" name="name" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Your Email</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Subject</label>
+    <input type="text" name="subject" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Your Message</label>
+    <textarea name="message" class="form-control" rows="5" required></textarea>
+  </div>
+
+  <button class="btn w-100 text-white" style="background:#5057cd;">
+    Submit
+  </button>
+
+</form>
       </div>
 
     </div>
@@ -312,7 +338,7 @@
         <div class="indotech-footer-copy">
 
             <p>
-                © 2026 RV Indotech Enterprises. All Rights Reserved. Designed and Developed by <a href="https://saturnwebmedia.com/" class="text-decoration-none ">Saturn Web Media.</a>
+                © 2026 RV Indotech. All Rights Reserved. Designed and Developed by <a href="https://saturnwebmedia.com/" class="text-decoration-none ">Saturn Web Media.</a>
             </p>
 
         </div>

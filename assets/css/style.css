@@ -190,7 +190,9 @@ li, a{
 .indotech-heading-bottom p{
     max-width:760px;
     margin:auto;
-    color:#6b7280;
+    /* color:#6b7280; */
+color: #000;
+/* font-weight: 400; */
     font-size:16px;
     line-height:1.8;
 }
