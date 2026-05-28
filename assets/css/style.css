@@ -1,0 +1,2086 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html, body {
+  overflow-x: hidden;
+
+}
+/* Navigation */
+.nav-item .nav-link{
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+li.nav-item {
+    padding: 5px;
+}
+/* Dropdown styling */
+.dropdown-menu {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 0;
+}
+.nav-item .nav-link:hover {
+  /* background: #5359cd; */
+  color: #5359cd;
+  padding-left: 25px;
+      transition: 0.3s;
+
+}
+
+.nav-item .nav-link.active{
+    color: #5057cd !important;
+    font-weight: 600;
+}
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+/*show dropdown on hover (desktop only) */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-radius: 0px;
+  }
+}
+
+/* dropdown */
+
+.custom-drop {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.custom-drop.dropdown-toggle::after {
+  display: none !important;
+}
+
+.custom-drop::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #5359cd;
+  transition: 0.3s ease;
+}
+
+.custom-drop:hover::after {
+  width: 100%;
+}
+
+.custom-dropdown {
+  border: none;
+  border-radius: 12px;
+  padding: 8px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  animation: dropFade 0.25s ease-in-out;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 10px 18px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background: #5359cd;
+  color: #fff;
+  padding-left: 25px;
+}
+
+@keyframes dropFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2{
+  font-family: 'Lucida Sans',  sans-serif;
+  font-size: 25px;
+  margin-bottom:15px;
+  color:var(--dark);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lucida Sans',  sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+p{
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.68;
+}
+li, a{
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.68;
+
+}
+/* Section Common */
+    .rv-section{
+      padding:90px 0;
+    }
+    .rv-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .rv-title p{
+      color:var(--text);
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+    }
+.pd-sec{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+/* =========================================================
+  HOMEPAGE SECTION
+========================================================= */
+/* Main Heading */
+.indotech-heading-wrap{
+    max-width:900px;
+    margin:0 auto 70px;
+    text-align:center;
+    position:relative;
+    padding:0 15px;
+}
+
+/* Top */
+
+.indotech-heading-top span{
+    display:inline-block;
+    background:#eef2ff;
+    color:#5057cd;
+    padding:10px 24px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:22px;
+}
+
+/* Main Title */
+
+.indotech-heading-center h2{
+  /* font-size: 30px; */
+    color:#111827;
+    line-height:1.2;
+    margin-bottom:22px;
+}
+
+/* Bottom */
+
+.indotech-heading-bottom p{
+    max-width:760px;
+    margin:auto;
+    color:#6b7280;
+    font-size:16px;
+    line-height:1.8;
+}
+
+/* Decorative Line */
+
+.indotech-heading-wrap::after{
+    content:'';
+    width:120px;
+    height:1px;
+    background:#5057cd;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-25px;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.indotech-heading-center h2{
+    font-size:44px;
+}
+
+}
+
+@media(max-width:767px){
+
+.indotech-heading-wrap{
+    margin-bottom:55px;
+}
+
+.indotech-heading-top span{
+    font-size:12px;
+    padding:8px 18px;
+}
+
+.indotech-heading-center h2{
+    font-size:32px;
+}
+
+.indotech-heading-bottom p{
+    font-size:15px;
+}
+
+.indotech-heading-wrap::after{
+    width:80px;
+}
+
+}
+
+/* =========================================================
+  BANNER SLIDER
+========================================================= */
+
+.indotech-creative-banner{
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slider Image */
+
+.indotech-banner-image img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform: scale(1.05);
+}
+
+/* Overlay */
+
+.indotech-banner-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    120deg,
+    rgba(17,24,39,0.92) 30%,
+    rgba(17,24,39,0.60) 60%,
+    rgba(80,87,205,0.30) 100%
+    );
+}
+
+/* Content */
+
+.indotech-banner-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    max-width: 760px;
+}
+
+.indotech-banner-content span{
+    display: inline-block;
+    background: rgba(80,87,205,0.18);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #dbe4ff;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.indotech-banner-content h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.indotech-banner-content p{
+    color: #e5e7eb;
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 650px;
+    margin-bottom: 38px;
+}
+
+/* Buttons */
+
+.indotech-banner-buttons{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.indotech-main-btn{
+    background: #5057cd;
+    color: #fff;
+    padding: 16px 42px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.indotech-main-btn:hover{
+    background: #fff;
+    color: #111827;
+}
+
+.indotech-outline-btn{
+    border: 2px solid rgba(255,255,255,0.18);
+    color: #fff;
+    padding: 16px 42px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.indotech-outline-btn:hover{
+    background: #fff;
+    color: #111827;
+}
+
+/* Slider Controls */
+
+.indotech-slider-prev,
+.indotech-slider-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+.indotech-slider-prev:hover,
+.indotech-slider-next:hover{
+    background: #5057cd;
+}
+
+.indotech-slider-prev{
+    left: 30px;
+}
+
+.indotech-slider-next{
+    right: 30px;
+}
+
+.indotech-slider-prev i,
+.indotech-slider-next i{
+    font-size: 22px;
+}
+
+/* Indicators */
+
+.indotech-banner-indicators{
+    margin-bottom: 35px;
+}
+
+.indotech-banner-indicators button{
+    width: 2px !important;
+    height: 2px !important;
+    border-radius: 50%;
+    background: #fff !important;
+    opacity: 0.5;
+}
+
+.indotech-banner-indicators .active{
+    background: #5057cd !important;
+    opacity: 1;
+}
+
+/* =========================================================
+   LARGE DEVICES
+========================================================= */
+
+@media(max-width:1199px){
+
+.indotech-banner-content h1{
+    font-size: 60px;
+}
+
+}
+
+/* =========================================================
+   TABLET DEVICES
+========================================================= */
+
+@media(max-width:991px){
+
+.indotech-banner-image img{
+    height: 90vh;
+}
+
+.indotech-banner-content{
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.indotech-banner-content h1{
+    font-size: 48px;
+}
+
+.indotech-banner-content p{
+    font-size: 16px;
+}
+
+.indotech-slider-prev,
+.indotech-slider-next{
+    width: 50px;
+    height: 50px;
+}
+
+}
+/* =========================================================
+   MOBILE FIX FOR BANNER CONTENT
+========================================================= */
+
+@media(max-width:767px){
+
+/* Slider Height */
+
+.indotech-banner-image img{
+    height:100vh;
+}
+
+/* Content Center */
+
+.indotech-banner-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    padding:0 20px;
+    text-align:center;
+    z-index:5;
+}
+
+/* Tag */
+
+.indotech-banner-content span{
+    font-size:11px;
+    padding:8px 16px;
+    margin-bottom:16px;
+}
+
+/* Heading */
+
+.indotech-banner-content h1{
+    font-size:20px;
+    line-height:1.3;
+    margin-bottom:18px;
+}
+
+/* Paragraph */
+
+.indotech-banner-content p{
+    font-size:14px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* Buttons */
+
+.indotech-banner-buttons{
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.indotech-main-btn,
+.indotech-outline-btn{
+    width:220px;
+    text-align:center;
+    padding:14px 20px;
+    font-size:14px;
+}
+
+/* Controls */
+
+.indotech-slider-prev,
+.indotech-slider-next{
+    width:42px;
+    height:42px;
+    top:50%;
+}
+
+.indotech-slider-prev{
+    left:10px;
+}
+
+.indotech-slider-next{
+    right:10px;
+}
+
+.indotech-slider-prev i,
+.indotech-slider-next i{
+    font-size:16px;
+}
+
+/* Dots */
+
+.indotech-banner-indicators{
+    margin-bottom:12px;
+}
+
+.indotech-banner-indicators button{
+    width:10px !important;
+    height:10px !important;
+}
+
+}
+/* =========================================================
+   SMALL MOBILE DEVICES
+========================================================= */
+
+@media(max-width:480px){
+
+.indotech-banner-image img{
+    height: 80vh;
+}
+
+.indotech-banner-content h1{
+    font-size: 28px;
+}
+
+.indotech-banner-content p{
+    font-size: 14px;
+}
+
+.indotech-main-btn,
+.indotech-outline-btn{
+    width: 100%;
+    text-align: center;
+}
+
+}
+/* =========================================================
+   FOOTER SECTION
+========================================================= */
+
+.indotech-overlay-footer{
+    position:relative;
+    padding:100px 0 25px;
+    overflow:hidden;
+    background:url(../images/background-img.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* Overlay */
+
+.indotech-overlay-bg{
+    position:absolute;
+    inset:0;
+    background:rgba(17,24,39,0.92);
+}
+
+/* Brand */
+
+.indotech-footer-brand{
+    color:#fff;
+    font-size:34px;
+    font-weight:800;
+    display:inline-block;
+    margin-bottom:22px;
+}
+
+.indotech-footer-brand:hover{
+    color:#5057cd;
+}
+
+/* Paragraph */
+
+.indotech-footer-info p{
+    color:#cbd5e1;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+/* Social */
+
+.indotech-footer-socials{
+    display:flex;
+    gap:14px;
+}
+
+.indotech-footer-socials a{
+    width:46px;
+    height:46px;
+    background:rgba(255,255,255,0.08);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    transition:0.4s;
+}
+
+.indotech-footer-socials a:hover{
+    background:#5057cd;
+    transform:translateY(-5px);
+}
+
+/* Footer Heading */
+
+.indotech-footer-menu h4,
+.indotech-footer-contact h4{
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:28px;
+}
+
+/* Links */
+
+.indotech-footer-menu ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.indotech-footer-menu ul li{
+    margin-bottom:10px;
+}
+
+.indotech-footer-menu ul li a{
+    color:#cbd5e1;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.indotech-footer-menu ul li a:hover{
+    color:#fff;
+    padding-left:6px;
+}
+
+/* Contact */
+
+.indotech-contact-box{
+    display:flex;
+    gap:14px;
+    margin-bottom:5px;
+}
+
+.indotech-contact-box i{
+    color:#5057cd;
+    font-size:15px;
+    margin-top:4px;
+}
+
+.indotech-contact-box span{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* Bottom */
+
+.indotech-footer-copy{
+    border-top:1px solid rgba(255,255,255,0.08);
+    margin-top:70px;
+    padding-top:25px;
+    text-align:center;
+}
+
+.indotech-footer-copy p{
+    color:#94a3b8;
+    margin:0;
+    font-size:15px;
+}
+.indotech-footer-copy a{
+     color:#94a3b8;
+}
+/* Responsive */
+
+@media(max-width:991px){
+
+.indotech-overlay-footer{
+    padding:80px 0 25px;
+}
+
+.indotech-footer-brand{
+    font-size:28px;
+}
+
+}
+
+@media(max-width:767px){
+
+.indotech-overlay-footer{
+    padding:60px 0 20px;
+}
+
+.indotech-footer-brand{
+    font-size:24px;
+}
+
+.indotech-footer-menu h4,
+.indotech-footer-contact h4{
+    font-size:22px;
+}
+
+.indotech-footer-copy{
+    margin-top:45px;
+}
+
+}
+/* =========================================================
+  ABOUT SECTION
+========================================================= */
+
+    .rv-about-img img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .rv-about-content h3{
+      font-size:20px !important;
+      margin-bottom:20px;
+      font-weight:800;
+    }
+    .rv-about-list{
+      list-style:none;
+      padding:0;
+    }
+
+    .rv-about-list li{
+      margin-bottom:10px;
+      font-weight:600;
+      color:#333;
+    }
+
+    .rv-about-list i{
+      color:#5057cd;
+      margin-right:10px;
+    }
+
+    /* Services */
+
+    .rv-service-box{
+      background:#fff;
+      padding:35px 25px;
+      border:1px solid #eee;
+      transition:0.4s;
+      height:100%;
+    }
+
+    .rv-service-box:hover{
+      background:var(--primary);
+      color:#fff;
+      transform:translateY(-10px);
+    }
+
+    .rv-service-box:hover p,
+    .rv-service-box:hover h4,
+    .rv-service-box:hover i{
+      color:#fff;
+    }
+
+    .rv-service-box i{
+      font-size:50px;
+      color:var(--primary);
+      margin-bottom:20px;
+      display:inline-block;
+    }
+
+    .rv-service-box h4{
+      font-size:24px;
+      font-weight:700;
+      margin-bottom:15px;
+    }
+
+    .rv-service-box p{
+      color:var(--text);
+      line-height:1.8;
+    }
+
+/* =========================================================
+  WHAT WE OFFER SECTION
+========================================================= */
+.indotech-offer-section{
+    background:#f8faff;
+}
+
+.indotech-offer-card{
+    background:#fff;
+    padding:30px;
+    gap:25px;
+    height:100%;
+    border:1px solid #e5e7eb;
+    transition:0.4s;
+    align-items:flex-start;
+}
+
+.indotech-offer-card:hover{
+    transform:translateY(-8px);
+    border-color:#5057cd;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.indotech-offer-icon{
+    min-width:75px;
+    height:75px;
+    background:#5057cd;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+}
+
+.indotech-offer-content h4{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:12px;
+    color:#111827;
+}
+
+.indotech-offer-content p{
+    color:#6b7280;
+    line-height:1.8;
+    margin:0;
+}
+
+@media(max-width:767px){
+
+.indotech-offer-card{
+    flex-direction:column;
+}
+
+}
+/* =========================================================
+   PARTNERSHIP SECTION
+========================================================= */
+
+/* Cards */
+
+.indotech-partner-card{
+    background:#fff;
+    padding:40px 30px;
+    height:100%;
+    border:1px solid #e5e7eb;
+    position:relative;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.indotech-partner-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#5057cd;
+    transform:scaleX(0);
+    transition:0.4s;
+}
+
+.indotech-partner-card:hover::before{
+    transform:scaleX(1);
+}
+
+.indotech-partner-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.indotech-partner-icon{
+    width:80px;
+    height:80px;
+    background:#eef2ff;
+    color:#5057cd;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    margin-bottom:25px;
+    transition:0.4s;
+}
+
+.indotech-partner-card:hover .indotech-partner-icon{
+    background:#5057cd;
+    color:#fff;
+}
+
+.indotech-partner-card h4{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#111827;
+}
+
+.indotech-partner-card p{
+    color:#6b7280;
+    line-height:1.9;
+    margin:0;
+}
+
+@media(max-width:991px){
+
+.indotech-card-heading h2{
+    font-size:34px;
+}
+
+}
+
+@media(max-width:767px){
+
+.indotech-card-heading h2{
+    font-size:28px;
+}
+
+.indotech-partner-card{
+    padding:30px 25px;
+}
+
+}
+/* =========================================================
+   PRODUCT SECTION
+========================================================= */
+
+.indotech-product-heading span{
+    color:#5057cd;
+    font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+.indotech-product-heading h2{
+    
+    color:#111827;
+    margin-bottom:20px;
+}
+
+.indotech-product-heading p{
+    max-width:760px;
+    margin:auto;
+    color:#6b7280;
+    line-height:1.9;
+}
+
+/* Product Card */
+
+.indotech-product-card{
+    background:#fff;
+    overflow:hidden;
+    border:1px solid #e5e7eb;
+    transition:0.4s;
+    height:100%;
+}
+
+.indotech-product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.indotech-product-image{
+    overflow:hidden;
+}
+
+.indotech-product-image img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.indotech-product-card:hover .indotech-product-image img{
+    transform:scale(1.08);
+}
+
+.indotech-product-content{
+    padding:30px;
+}
+
+.indotech-product-content h4{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#111827;
+}
+
+.indotech-product-content p{
+    color:#6b7280;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.indotech-product-btn{
+    display:inline-block;
+    background:#5057cd;
+    color:#fff;
+    padding:12px 28px;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.indotech-product-btn:hover{
+    background:#111827;
+    color:#fff;
+}
+.indotech-product-section{
+    background:#ffffff;
+}
+
+@media(max-width:991px){
+
+.indotech-product-heading h2{
+    font-size:34px;
+}
+
+}
+
+@media(max-width:767px){
+
+.indotech-product-heading h2{
+    font-size:28px;
+}
+
+.indotech-product-image img{
+    height:230px;
+}
+
+.indotech-product-content{
+    padding:25px;
+}
+
+}
+
+/* Product CTA Card */
+
+.indotech-product-cta-card{
+    background:
+    linear-gradient(rgba(17,24,39,0.75),rgba(17,24,39,0.75)),
+    url(../images/about-homepage.jpg);
+    background-size:cover;
+    background-position:center;
+    min-height:100%;
+    display:flex;
+    align-items:center;
+    padding:40px 30px;
+    position:relative;
+    overflow:hidden;
+}
+
+.indotech-product-cta-overlay span{
+    color:#c7d2fe;
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+.indotech-product-cta-overlay h3{
+    color:#fff;
+    font-size:34px;
+    font-weight:800;
+    line-height:1.3;
+    margin-bottom:18px;
+}
+
+.indotech-product-cta-overlay p{
+    color:#e5e7eb;
+    line-height:1.9;
+    margin-bottom:28px;
+}
+
+.indotech-product-cta-btn{
+    display:inline-block;
+    background:#5057cd;
+    color:#fff;
+    padding:14px 32px;
+    font-weight:700;
+    transition:0.4s;
+}
+
+.indotech-product-cta-btn:hover{
+    background:#fff;
+    color:#111827;
+}
+
+@media(max-width:767px){
+
+.indotech-product-cta-overlay h3{
+    font-size:28px;
+}
+
+}
+
+/* =========================================================
+  SUPPLIER SELECTION PROCESS SECTION
+========================================================= */
+
+.indotech-supplier-section{
+    background:#f8faff;
+}
+
+.indotech-supplier-image img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.indotech-supplier-content span{
+    color:#5057cd;
+    font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+.indotech-supplier-content h2{
+   
+    color:#111827;
+    margin-bottom:20px;
+}
+
+.indotech-supplier-content p{
+    color:#6b7280;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+/* Supplier Points */
+
+.indotech-supplier-points{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.indotech-supplier-points li{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:10px 0;
+    border-bottom:1px solid #e5e7eb;
+    font-size:17px;
+    font-weight:600;
+    color:#111827;
+}
+
+.indotech-supplier-points li i{
+    color:#5057cd;
+    font-size:20px;
+}
+
+/* =========================================================
+  COUNTER SECTION
+========================================================= */
+
+.indotech-counter-section{
+    padding:90px 0;
+    background:
+    linear-gradient(rgba(17,24,39,0.82),rgba(17,24,39,0.82)),
+    url(../images/background-img.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.indotech-counter-box{
+    text-align:center;
+    color:#fff;
+}
+
+.indotech-counter-box h2{
+    display:inline-block;
+    font-size:58px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.indotech-counter-box span{
+    font-size:42px;
+    font-weight:800;
+    color:#5057cd;
+}
+
+.indotech-counter-box p{
+    font-size:18px;
+    color:#e5e7eb;
+    margin-top:10px;
+    letter-spacing:0.5px;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.indotech-counter-box h2{
+    font-size:48px;
+}
+
+}
+
+@media(max-width:767px){
+
+.indotech-counter-section{
+    padding:70px 0;
+}
+
+.indotech-counter-box h2{
+    font-size:38px;
+}
+
+.indotech-counter-box span{
+    font-size:30px;
+}
+
+.indotech-counter-box p{
+    font-size:16px;
+}
+
+}
+
+/* =========================================================
+ CTA SECTION
+========================================================= */
+.indotech-bg-cta{
+    padding:120px 0;
+    background:
+    linear-gradient(rgba(17,24,39,0.78),rgba(17,24,39,0.78)),
+    url(../images/breadcrum-image.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    overflow:hidden;
+}
+
+/* Content */
+
+.indotech-bg-cta-content span{
+    color:#c7d2fe;
+    font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.indotech-bg-cta-content h2{
+    color:#fff;
+    font-size:45px;
+    font-weight:700;
+    line-height:1.3;
+    max-width:900px;
+    margin:auto auto 25px;
+}
+
+.indotech-bg-cta-content p{
+    color:#e5e7eb;
+    line-height:1.9;
+    max-width:760px;
+    margin:auto auto 35px;
+    font-size:17px;
+}
+
+/* Buttons */
+
+.indotech-bg-cta-btns{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.indotech-bg-main-btn{
+    background:#5057cd;
+    color:#fff;
+    padding:16px 40px;
+    font-size:16px;
+    font-weight:700;
+    transition:0.4s;
+}
+
+.indotech-bg-main-btn:hover{
+    background:#fff;
+    color:#111827;
+}
+
+.indotech-bg-outline-btn{
+    border:2px solid rgba(255,255,255,0.25);
+    color:#fff;
+    padding:16px 40px;
+    font-size:16px;
+    font-weight:700;
+    transition:0.4s;
+}
+
+.indotech-bg-outline-btn:hover{
+    background:#fff;
+    color:#111827;
+    border-color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.indotech-bg-cta-content h2{
+    font-size:42px;
+}
+
+}
+
+@media(max-width:767px){
+
+.indotech-bg-cta{
+    padding:90px 0;
+}
+
+.indotech-bg-cta-content h2{
+    font-size:30px;
+}
+
+.indotech-bg-cta-content p{
+    font-size:15px;
+}
+
+.indotech-bg-main-btn,
+.indotech-bg-outline-btn{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+/* =========================================================
+  ABOUT PAGE SECTION 
+========================================================= */
+/* breadcrumb */
+.breadcrumb-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url(../images/breadcrum-image.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+            
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.about img {
+    width: 48%;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 48%;
+}
+
+.about-text h1 {
+    color: #2c3e94;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    line-height: 1.7;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about img,
+    .about-text {
+        width: 100%;
+    }
+}
+/* Team Section */
+.team-section {
+  background: url(../images/background-img.jpg);
+    background-attachment: fixed;
+ 
+}
+
+.team-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.team {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.member h3 {
+    margin-bottom: 5px;
+    color: #5157cb;
+}
+
+.member span {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #777;
+}
+
+
+.experts-section {
+    background: #f4f7fb;
+    padding: 60px 0;
+}
+
+
+/* TITLE */
+.experts-title {
+    text-align: center;
+    font-size: 32px;
+    color: #1f2a44;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.experts-title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #3b82f6;
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* SUBTEXT */
+.experts-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* LAYOUT */
+.experts-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* LEFT BOX */
+.experts-left {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+/* ITEM */
+.expert-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.expert-item:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    background: #eef4ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.expert-item p {
+    margin: 0;
+    color: #374151;
+}
+
+/* IMAGE */
+.experts-right {
+    width: 50%;
+}
+
+.experts-right img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .experts-wrapper {
+        flex-direction: column;
+    }
+
+    .experts-left,
+    .experts-right {
+        width: 100%;
+    }
+}
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.slider-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.t-color{
+  color: #02060f;
+}
+
+/* breadcrumb */
+/* .breadcrumb-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url(../images/breadcrum-image.jpg) center/cover no-repeat;
+ background-position: center;
+
+} */
+
+
+/* ================= AIM BOX ================= */
+
+.our-aim-card{
+    margin-top:30px;
+       background:  #545acce3;
+    color:#fff;
+    padding:35px;
+    border-radius:5px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+.about-container{
+    flex-direction:column;
+}
+
+
+}
+.about-container{
+    display:flex;
+    gap:60px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about-right img{
+    width:100%;
+    /* border-radius:25px; */
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+.about-left-sec img{
+    border-radius:10px;
+
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color:#000;
+    border-radius:50%;
+    padding:15px;
+} */
+
+/* 
+
+  :root{
+      --primary:#5057cd;
+      --dark:#1d1f2c;
+      --light:#ffffff;
+      --gray:#6b7280;
+      --section:#eef1ff;
+      --border:#e5e7eb;
+    }
+
+
+
+.rv-hero-slider{
+      width:100%;
+      height:88vh;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .rv-slider-track{
+      display:flex;
+      width:300%;
+      animation:rvSlide 15s infinite;
+    }
+
+    .rv-slide-item{
+      width:100%;
+      height:88vh;
+      position:relative;
+      flex-shrink:0;
+    }
+
+    .rv-slide-image{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:brightness(0.45);
+    }
+
+    .rv-slide-overlay{
+      position:absolute;
+      top:50%;
+      left:8%;
+      transform:translateY(-50%);
+      color:#fff;
+      max-width:650px;
+    }
+
+    .rv-slide-title{
+      font-size:56px;
+      margin-bottom:20px;
+      line-height:1.2;
+    }
+
+    .rv-slide-text{
+      font-size:18px;
+      color:#f1f1f1;
+      margin-bottom:28px;
+    }
+
+    .rv-primary-btn{
+      display:inline-block;
+      background:var(--primary);
+      color:#fff;
+      padding:14px 30px;
+      text-decoration:none;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    .rv-primary-btn:hover{
+      background:#3d44b5;
+    }
+
+    @keyframes rvSlide{
+
+      0%{
+        transform:translateX(0);
+      }
+
+      30%{
+        transform:translateX(0);
+      }
+
+      35%{
+        transform:translateX(-100%);
+      }
+
+      65%{
+        transform:translateX(-100%);
+      }
+
+      70%{
+        transform:translateX(-200%);
+      }
+
+      100%{
+        transform:translateX(-200%);
+      }
+    }
+
+
+    .rv-common-section{
+      padding:90px 8%;
+    }
+
+    .rv-section-heading{
+      text-align:center;
+      margin-bottom:55px;
+    }
+
+    .rv-section-title{
+      font-size:40px;
+      color:var(--dark);
+      margin-bottom:12px;
+    }
+
+    .rv-section-subtitle{
+      color:var(--gray);
+      max-width:800px;
+      margin:auto;
+    }
+
+    .rv-about-section{
+      padding:90px 8%;
+    }
+
+    .rv-about-wrapper{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .rv-about-image{
+      width:100%;
+      height:450px;
+      object-fit:cover;
+    }
+
+    .rv-about-content h3{
+      font-size:34px;
+      color:var(--dark);
+      margin-bottom:20px;
+    }
+
+    .rv-about-content p{
+      color:var(--gray);
+      margin-bottom:18px;
+    }
+
+    .rv-card-layout{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .rv-info-card,
+    .rv-service-card,
+    .rv-partner-card{
+      background:#fff;
+      border:1px solid var(--border);
+      padding:35px;
+      transition:0.3s;
+    }
+
+    .rv-info-card:hover,
+    .rv-service-card:hover,
+    .rv-partner-card:hover{
+      transform:translateY(-5px);
+      border-color:var(--primary);
+    }
+
+    .rv-info-card h3,
+    .rv-service-card h3,
+    .rv-partner-card h3{
+      color:var(--primary);
+      margin-bottom:16px;
+      font-size:22px;
+    }
+
+    .rv-info-card p,
+    .rv-service-card p,
+    .rv-partner-card p{
+      color:var(--gray);
+      font-size:15px;
+    }
+
+ 
+    .rv-light-background{
+      background:var(--section);
+    }
+
+
+    .rv-product-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .rv-product-card{
+      background:#fff;
+      border:1px solid var(--border);
+    }
+
+    .rv-product-content{
+      padding:30px;
+    }
+
+    .rv-product-content h3{
+      margin-bottom:15px;
+      color:var(--dark);
+      font-size:22px;
+    }
+
+    .rv-product-content p{
+      color:var(--gray);
+      font-size:15px;
+    }
+
+    .rv-footer{
+      background:var(--dark);
+      color:#fff;
+      text-align:center;
+      padding:30px;
+    }
+
+
+    @media(max-width:900px){
+
+      .rv-navbar{
+        display:none;
+      }
+
+      .rv-about-wrapper{
+        grid-template-columns:1fr;
+      }
+
+      .rv-slide-title{
+        font-size:38px;
+      }
+
+      .rv-hero-slider,
+      .rv-slide-item{
+        height:70vh;
+      }
+
+      .rv-common-section,
+      .rv-about-section{
+        padding:70px 6%;
+      }
+    } */
+     
+/* ===== MAIN SECTION ===== */
+.rs-services-single{
+  padding: 80px 0;
+}
+.service-section h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    /* color: #5359cd; */
+}
+.service-section h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.service-section .rs-services-single h5{
+    font-size: 17px !important;
+}
+.services-list li{
+    border-radius: 0px;
+    margin-bottom: 13px;
+    background: #f8f9fa;
+}
+/* IMAGE */
+.services-img img{
+  width: 100%;
+  /* border-radius: 8px; */
+}
+
+/* ===== SIDEBAR ===== */
+.services-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  /* box-shadow: 0 10px 25px rgba(0,0,0,0.08); */
+}
+
+.services-list li a{
+  display: block;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.services-list li a:hover,
+.services-list li a.active{
+  background: #5359cd;
+  color: #fff;
+  padding-left: 22px;
+  /* border-radius: 0px; */
+}
+
+/* CALL BOX */
+.services-add{
+  background: #f8f9fa;
+    background-position: center;
+    color: #000000;
+    padding: 26px;
+    border-radius: 0px;
+    margin-top: 20px;
+
+}
+.services-add h4{
+  font-size: 1.4rem;
+}
+.services-add a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    background: #5359cd;
+    padding: 7px 11px;
+    border-radius: 2px;
+}
+.service-section p{
+  font-family: 'Public Sans', sans-serif;
+  color: #4d5765;
+  line-height: 1.68;
+}
+.service-section li, a{
+    font-family: 'Public Sans', sans-serif;
+    color: #4d5765;
+    line-height: 1.68;
+
+}
+.call-banner {
+  position: relative;
+  background: url('../images/forging-services.jpg') center/cover no-repeat;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-family: 'Georgia', serif;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #000000a3;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background:#5359cd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 20px;
+}
+
+
+
+.divider {
+  width: 120px;
+  height: 2px;
+  border-bottom: 3px dashed #ffffff;
+  margin: 20px auto;
+}
+
+.phone {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* CHECK LIST */
+.check-lists3 li{
+  margin-bottom: 8px;
+}
+
+/*=================================
+ contact section 
+ ================================*/
+.section a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+.section {
+    padding: 20px;
+    border: 1px solid #efebeb;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.section:hover {
+    background-color: #5359cd;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+}
+/* Heading default */
+.section h4 {
+    color: #5359cd;
+    transition: 0.3s ease;
+}
+
+/* Change heading color on hover */
+.section:hover h4 {
+    color: #fff;
+}
+
+/* Links default */
+
+
+/* Links on hover */
+.section:hover a {
+    color: #fff;
+}
+
+.section i {
+    margin-right: 5px;
+}
+
+/* .footer-section {
+    background-image: linear-gradient(#5359cd, #3e439ab3), url(../images/footer_bg.webp);
+    background-size: cover;
+    background-position: center;
+} */
