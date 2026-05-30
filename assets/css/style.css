@@ -7,6 +7,9 @@ html, body {
   overflow-x: hidden;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 /* Navigation */
 .nav-item .nav-link{
     font-weight: 500;
